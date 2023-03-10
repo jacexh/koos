@@ -29,6 +29,8 @@ sudo apt-get install helm
 
 <https://github.com/caddyserver/ingress>
 
+**修改Caddy为NodePort，并暴露30000 30001两个端口**
+
 ```bash
 kubectl create namespace caddy-system
 helm install \
