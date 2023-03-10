@@ -2,11 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: v2fly
-  annotations:
-    kubernetes.io/ingress.class: caddy
   labels:
     name: v2fly
 spec:
+  ingressClassName: caddy
   rules:
   - host: v2fly.foobar.com
     http:
