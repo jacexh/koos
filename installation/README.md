@@ -36,4 +36,6 @@ kubectl create namespace caddy-system
 注意:
 - 使用`helm template`的方式生成yaml
 - 修改Caddy为NodePort，并暴露30000 30001两个端口
+    - Type: `NodePort`
+    - nodePort: 30000
 - 修改configmap中的`ingressController.config.email`以实现自动获取HTTPS证书
