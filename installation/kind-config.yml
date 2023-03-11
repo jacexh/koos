@@ -23,7 +23,7 @@ nodes:
     protocol: TCP
   extraMounts:
   - hostPath: ./control-plane-data
-    containaerPath: /opt/data
+    containerPath: /opt/data
 - role: worker
   extraMounts:
   - hostPath: ./worker-data
