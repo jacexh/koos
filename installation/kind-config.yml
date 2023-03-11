@@ -21,5 +21,10 @@ nodes:
   - containerPort: 30001
     hostPort: 443
     protocol: TCP
+  extraMounts:
+  - hostPath: ./control-plane-data
+    containaerPath: /opt/data
 - role: worker
-- role: worker
+  extraMounts:
+  - hostPath: ./worker-data
+    containerPath: /opt/data
