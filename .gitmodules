@@ -1,0 +1,3 @@
+[submodule "ingress"]
+	path = ingress
+	url = git@github.com:caddyserver/ingress.git
