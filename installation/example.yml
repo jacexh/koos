@@ -49,7 +49,7 @@ spec:
         app: <your-app>
     spec:
       containers:
-      - name: mirror
+      - name: <your-app>
         image: ghcr.io/jacexh/<your-app>:sha-70333d0
         ports:
         - containerPort: 8080
