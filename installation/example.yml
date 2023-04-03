@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: mirror
+  name: <your-app>
   labels:
-    name: mirror
+    name: <your-app>
 spec:
-  ingreeClassName: caddy
+  ingressClassName: caddy
   rules:
   - host: <your.domain.com>
     http:
